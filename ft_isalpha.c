@@ -6,14 +6,14 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 17:51:19 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/01 18:22:34 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/02 16:06:53 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1024);
+		return (1);
 	else
 		return (0);
 }

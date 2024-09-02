@@ -6,14 +6,14 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:04:30 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/01 21:23:58 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/02 16:06:29 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalnum(int c)
 {
 	if (ft_isdigit(c) || ft_isalpha(c))
-		return (8);
+		return (1);
 	else
 		return (0);
 }

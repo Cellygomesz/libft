@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:24:57 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/01 23:23:28 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/02 15:25:32 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,7 @@ void	ft_putchar_fd(char c, int fd);
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 11:48:16 by mgomes-s          #+#    #+#              #
-#    Updated: 2024/09/18 10:35:55 by mgomes-s         ###   ########.fr        #
+#    Updated: 2024/09/18 10:49:33 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,14 +23,13 @@ CC_FLAGS = -Wall -Wextra -Werror
 all: $(NAME) 
 
 $(NAME): $(OBJ)
-	echo "Successful compilation"
+	@ echo "---<3--- Successful compilation ---<3---"
 
 clean:
-	 rm -fr $(OBJ)
+	rm -fr $(OBJ)
+	@ echo "---<3--- Deleted object files ---<3---"
 
 fclean: clean
-	 rm -f $(NAME)
-	echo "arquivos obj excluidos"
+	rm -f $(NAME)
 
 re: fclean $(NAME)
-

@@ -6,53 +6,26 @@
 /*   By: mgomes-s <mgomes-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:56:23 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/18 09:24:38 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 13:42:56 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// TA TUDO ERRADO 
-char	*ft_strlcpy(char *dest, const char *src, int size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int		i;
-	char	*ptr;
+	size_t	i;
+	size_t	sizesrc;
 
 	i = 0;
-	ptr = (char *)src;
-	if (size == 0)
+	sizesrc = ft_strlen(src);
+	if (dstsize == 0)
+		return (sizesrc);
+	while (src[i] && (i < dstsize - 1))
 	{
-		while (ptr[i])
-		{
-			i++;
-		}
-		return (ptr);
-	}
-	while (i < size - 1 && src[i])
-	{
-		dest[i] = src[i];
+		dst[i] = src[i];
 		i++;
 	}
-	if (i < size)
-		dest[i] = '\0';
-	while (ptr[i])
-		i++;
-	return (ptr);
-}
-
-#include <stdio.h>
-#include <bsd/string.h>
-
-int	main(void)
-{
-	char	*var[] = "o";
-	char	*var2[2];
-	char	test1[] = "oi";
-	char	test2[3];
-
-	ft_strlcpy(var2, var, 2);
-	printf("%lu\n", strlcpy(test2, test1, sizeof(test2)));
-	printf("%s\n", test2);
-	printf("%s\n", var2);
-	printf("%lu\n", test2);
+	dst[i] = '\0';
+	return (i);
 }

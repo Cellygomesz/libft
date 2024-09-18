@@ -6,12 +6,14 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:24:57 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/17 10:51:25 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 09:23:11 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+#include <unistd.h>
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);

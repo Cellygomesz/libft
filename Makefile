@@ -6,39 +6,31 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 11:48:16 by mgomes-s          #+#    #+#              #
-#    Updated: 2024/09/18 09:12:28 by mgomes-s         ###   ########.fr        #
+#    Updated: 2024/09/18 10:35:55 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# trocar depois os *.c e *.o !!!!!
-# tirar o Wildcard !!!!!
+NAME = libft.a
 
-NAME = libft
+SRC = ft_strlen.c \
 
-SRC = *.c
+OBJ = $(SRC:.c=.o)
 
-OBJ = $(SRC: .c = .o)
-
-HEADER = libft.h
-
-CC = gcc
+CC = cc
 
 CC_FLAGS = -Wall -Wextra -Werror
 
 all: $(NAME) 
 
 $(NAME): $(OBJ)
-	@ $(CC) $(CC_FLAGS) -o $(NAME) $(OBJ) $(HEADER)
 	echo "Successful compilation"
 
-$(OBJ): $(SRC)
-	@ $(CC) $(CC_FLAGS) -c $(SRC)
-
 clean:
-	@ rm -fr *.o
+	 rm -fr $(OBJ)
 
 fclean: clean
-	@ rm -f $(NAME)
+	 rm -f $(NAME)
+	echo "arquivos obj excluidos"
 
 re: fclean $(NAME)
 

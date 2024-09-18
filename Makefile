@@ -6,7 +6,7 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 11:48:16 by mgomes-s          #+#    #+#              #
-#    Updated: 2024/09/12 12:32:10 by mgomes-s         ###   ########.fr        #
+#    Updated: 2024/09/18 09:12:28 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,17 +19,20 @@ SRC = *.c
 
 OBJ = $(SRC: .c = .o)
 
+HEADER = libft.h
+
 CC = gcc
 
 CC_FLAGS = -Wall -Wextra -Werror
 
-all: $(NAME)
+all: $(NAME) 
 
 $(NAME): $(OBJ)
-	@ $(cc) -o $(NAME)
+	@ $(CC) $(CC_FLAGS) -o $(NAME) $(OBJ) $(HEADER)
+	echo "Successful compilation"
 
-%.o: %.c %.h
-	@ $(CC)-o $(NAME) $(CC_FLAGS)
+$(OBJ): $(SRC)
+	@ $(CC) $(CC_FLAGS) -c $(SRC)
 
 clean:
 	@ rm -fr *.o

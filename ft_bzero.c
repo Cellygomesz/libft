@@ -6,9 +6,11 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/02 21:17:16 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/02 21:32:55 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 09:16:46 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

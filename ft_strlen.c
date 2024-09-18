@@ -6,11 +6,11 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 17:19:20 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/08/31 17:24:26 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 09:25:00 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

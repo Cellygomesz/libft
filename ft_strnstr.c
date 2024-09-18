@@ -6,12 +6,11 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 11:07:30 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/17 13:20:06 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 09:26:34 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <bsd/string.h>
+#include "libft.h"
 
 int main() {
     const char *str = "Hello, this is a simple example. ola mindo";

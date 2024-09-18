@@ -6,9 +6,11 @@
 /*   By: mgomes-s <mgomes-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:56:23 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/10 16:11:17 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 09:24:38 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 // TA TUDO ERRADO 
 char	*ft_strlcpy(char *dest, const char *src, int size)

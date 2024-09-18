@@ -6,11 +6,11 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/31 18:13:47 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/08/31 18:23:31 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/18 09:22:44 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {

@@ -6,14 +6,15 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:24:57 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/18 09:23:11 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/24 10:44:51 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <unistd.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
@@ -28,5 +29,9 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_bzero(void *s, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, unsigned int n);
+char	*ft_strdup(const char *s);
+void	ft_putnbr_fd(int n, int fd);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 #endif

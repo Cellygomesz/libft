@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/10 13:56:23 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/23 09:10:33 by mgomes-s         ###   ########.fr       */
+/*   Created: 2024/09/24 09:59:08 by mgomes-s          #+#    #+#             */
+/*   Updated: 2024/09/24 10:38:38 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char	*ft_strdup(const char *s)
 {
-	size_t	i;
-	size_t	sizesrc;
+	unsigned int	i;
+	char			*temp;
 
 	i = 0;
-	sizesrc = ft_strlen(src);
-	if (dstsize == 0)
-		return (sizesrc);
-	while (src[i] && (i < dstsize - 1))
+	while (s[i])
 	{
-		dst[i] = src[i];
 		i++;
 	}
-	dst[i] = '\0';
-	return (i);
+	i = 0;
+	temp = (char *)malloc((sizeof(const char)) * (i + 1));
+	if (temp == NULL)
+		return (0);
+	else
+	{
+		while (s[i])
+		{
+			temp[i] = s[i];
+			i++;
+		}
+	}
+	return (temp);
 }

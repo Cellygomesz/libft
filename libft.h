@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:24:57 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/25 09:30:49 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/25 12:03:28 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_bzero(void *s, size_t n);
-int		ft_strncmp(const char *s1, const char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strdup(const char *s);
 void	ft_putnbr_fd(int n, int fd);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);

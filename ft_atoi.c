@@ -6,13 +6,13 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 23:56:49 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/25 00:06:20 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/25 09:27:06 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	neg;
@@ -32,7 +32,7 @@ int	atoi(const char *nptr)
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		temp = (nptr[i] - '0') + (temp * 10);
-		i++;	   
+		i++;
 	}
 	return (temp * neg);
 }

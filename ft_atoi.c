@@ -1,23 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/31 17:19:20 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/19 17:18:45 by mgomes-s         ###   ########.fr       */
+/*   Created: 2024/09/24 23:56:49 by mgomes-s          #+#    #+#             */
+/*   Updated: 2024/09/25 00:06:20 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	atoi(const char *nptr)
 {
-	size_t	i;
+	int	i;
+	int	neg;
+	int	temp;
 
 	i = 0;
-	while (s[i])
+	neg = 1;
+	temp = 0;
+	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	return (i);
+	if (nptr[i] == '+' || nptr[i] == '-')
+	{
+		if (nptr[i] == '-')
+			neg *= -1;
+		i++;
+	}
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		temp = (nptr[i] - '0') + (temp * 10);
+		i++;	   
+	}
+	return (temp * neg);
 }

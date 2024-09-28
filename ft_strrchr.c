@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/25 13:25:49 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/28 16:57:35 by mgomes-s         ###   ########.fr       */
-/*                              '                                              */
+/*   Created: 2024/09/28 17:25:28 by mgomes-s          #+#    #+#             */
+/*   Updated: 2024/09/28 18:01:18 by mgomes-s         ###   ########.fr       */
+/*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_strrchr(const char *s, int c)
 {
-	int				i;
-	unsigned char	*s01;
-	unsigned char	*s02;
+	size_t	lens;
+	char	*ptrs;
 
-	i = 0;
-	s01 = (unsigned char *)s1;
-	s02 = (unsigned char *)s2;
-	while (i < n)
+	ptrs = (char *)s;
+	lens = ft_strlen(ptrs);
+	while (lens > 0)
 	{
-		if (s01[i] != s02[i])
-			return (s01[i] - s02[i]);
-		i++;
+		if (ptrs[lens] == (char)c)
+			return (ptrs + lens);
+		lens--;
 	}
-	return (0);
+	if (ptrs[0] == (char)c)
+		return (ptrs);
+	return (NULL);
 }

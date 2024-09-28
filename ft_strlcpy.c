@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:56:23 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/25 09:40:09 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/28 18:17:50 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	sizesrc = ft_strlen(src);
 	if (size == 0)
 		return (sizesrc);
-	while (src[i] && (i < size - 1))
+	while (src[i] && i < (size - 1))
 	{
 		dst[i] = src[i];
 		i++;

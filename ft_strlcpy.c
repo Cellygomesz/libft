@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 13:56:23 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/28 18:17:50 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/09/28 18:29:49 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	}
 	dst[i] = '\0';
-	return (i);
+	return (sizesrc);
 }

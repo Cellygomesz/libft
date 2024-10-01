@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 09:59:08 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/24 10:38:38 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/01 15:06:27 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_strdup(const char *s)
 	{
 		i++;
 	}
+	temp = (char *)malloc((sizeof(char) * i) + 1);
 	i = 0;
-	temp = (char *)malloc((sizeof(const char)) * (i + 1));
 	if (temp == NULL)
 		return (0);
 	else
@@ -34,5 +34,6 @@ char	*ft_strdup(const char *s)
 			i++;
 		}
 	}
+	temp[i] = '\0';
 	return (temp);
 }

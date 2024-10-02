@@ -6,7 +6,7 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 11:48:16 by mgomes-s          #+#    #+#              #
-#    Updated: 2024/10/01 15:21:23 by mgomes-s         ###   ########.fr        #
+#    Updated: 2024/10/02 08:45:04 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC = ft_putchar_fd.c ft_isdigit.c ft_strdup.c ft_strncmp.c \
 	  ft_memcpy.c ft_isalnum.c ft_isascii.c ft_isalpha.c \
 	  ft_toupper.c ft_memset.c ft_atoi.c ft_strlcat.c ft_memchr.c \
 	  ft_memcmp.c ft_memmove.c ft_strchr.c ft_strnstr.c ft_strrchr.c \
-	  ft_calloc.c ft_strjoin.c ft_substr.c
+	  ft_calloc.c ft_strjoin.c ft_substr.c ft_strtrim.c
 
 OBJ = $(SRC:.c=.o)
 

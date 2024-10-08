@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 15:19:44 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/10/02 08:53:29 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/08 11:24:15 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	if (!s)

@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/25 13:25:49 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/10/01 13:24:55 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/08 11:18:28 by mgomes-s         ###   ########.fr       */
 /*                             '                                              */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*s01;
 	unsigned char	*s02;
 

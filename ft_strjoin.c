@@ -6,19 +6,19 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:36:52 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/10/02 08:51:36 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/08 11:25:43 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin( char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*s01;
 	char	*s02;
 	char	*ptr;
-	int		i;
-	int		j;
+	size_t	i;
+	size_t	j;
 
 	s01 = (char *)s1;
 	s02 = (char *)s2;

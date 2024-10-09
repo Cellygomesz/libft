@@ -6,7 +6,7 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 11:48:16 by mgomes-s          #+#    #+#              #
-#    Updated: 2024/10/08 12:23:11 by mgomes-s         ###   ########.fr        #
+#    Updated: 2024/10/09 14:35:38 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,9 +21,9 @@ SRC = ft_putchar_fd.c ft_isdigit.c ft_strdup.c ft_strncmp.c \
 	  ft_calloc.c ft_strjoin.c ft_substr.c ft_strtrim.c ft_itoa.c \
 	  ft_strmapi.c ft_striteri.c ft_split.c
 
-BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-		ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
-		ft_lstmap.c
+BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
 BONUS_OBJ = $(BONUS:.c=.o)
 
@@ -81,7 +81,7 @@ $(NAME): $(OBJ)
 	@ echo "$(GREEN)---<3--- Successful compilation ✅ ---<3---$(RESET)"
 
 bonus: $(OBJ) $(BONUS_OBJ)
-	@ ar rcs $(NAME) $(BONUS_OBJ)
+	@ ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
 	@ echo "$(GREEN)---<3--- Bonus files added ✅ ---<3---$(RESET)"
 
 clean:

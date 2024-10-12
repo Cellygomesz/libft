@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 09:59:08 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/10/01 15:06:27 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/12 02:39:09 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 char	*ft_strdup(const char *s)
 {
-	unsigned int	i;
+	size_t			i;
 	char			*temp;
 
 	i = 0;
 	while (s[i])
-	{
 		i++;
-	}
 	temp = (char *)malloc((sizeof(char) * i) + 1);
 	i = 0;
 	if (temp == NULL)

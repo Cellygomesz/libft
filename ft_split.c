@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 16:21:20 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/10/07 13:38:52 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/12 02:44:21 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,9 +86,7 @@ static char	*create_word(const char *s, int start, int end)
 		return (NULL);
 	i = 0;
 	while (start <= end)
-	{
 		word[i++] = s[start++];
-	}
 	word[i] = '\0';
 	return (word);
 }

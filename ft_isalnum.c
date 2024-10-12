@@ -6,7 +6,7 @@
 /*   By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/01 21:04:30 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/09/18 09:17:26 by mgomes-s         ###   ########.fr       */
+/*   Updated: 2024/10/12 02:07:11 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int	ft_isalnum(int c)
 {
+	(char)c;
 	if (ft_isdigit(c) || ft_isalpha(c))
 		return (1);
 	else

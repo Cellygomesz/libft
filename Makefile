@@ -6,7 +6,7 @@
 #    By: mgomes-s <mgomes-s@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/12 11:48:16 by mgomes-s          #+#    #+#              #
-#    Updated: 2024/10/10 12:13:27 by mgomes-s         ###   ########.fr        #
+#    Updated: 2024/10/12 01:51:07 by mgomes-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,10 +73,10 @@ TRASH = "$(GRAY)     \n\
 ⠀⠀⠀⠈⣿⣷⣾⣿⣷⣾⣿⣷⣾⣿⠁⠀⠀⠀⠀  \n\
 ⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀  \n$(RESET)"\
 
-%.o: %.c
-	$(CC) $(CC_FLAGS) -c $< -o $@
-
 all: $(NAME)
+
+%.o: %.c
+	@ $(CC) $(CC_FLAGS) -c $< -o $@
 
 $(NAME): $(OBJ)
 	@ ar rcs $(NAME) $(OBJ)
@@ -88,13 +88,13 @@ bonus: $(OBJ) $(BONUS_OBJ)
 	@ echo "$(GREEN)---<3--- Bonus files added ✅ ---<3---$(RESET)"
 
 clean:
-	@ rm -fr $(OBJ)
+	@ rm -fr $(OBJ) $(BONUS_OBJ)
 	@ echo $(TRASH)
 	@ echo "$(GREEN)---<3--- Deleted object files ✅ ---<3---$(RESET)"
 
 fclean: clean
 	@ rm -f $(NAME)
 
-re: fclean run
+re: fclean all
 
 .PHONY: all clean fclean re bonus

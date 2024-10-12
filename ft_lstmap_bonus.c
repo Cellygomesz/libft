@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mgomes-s <mgomes-s@42.rio>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/09 14:40:12 by mgomes-s          #+#    #+#             */
-/*   Updated: 2024/10/12 01:56:10 by mgomes-s         ###   ########.fr       */
+/*   Created: 2024/10/11 22:35:02 by mgomes-s          #+#    #+#             */
+/*   Updated: 2024/10/12 01:45:06 by mgomes-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (!lst)
+	t_list	*head;
+	t_list	*ptr;
+
+	if (!lst || !f)
 		return (NULL);
-	while (lst->next != NULL)
+	head = NULL;
+	while (lst)
 	{
+		ptr = ft_lstnew((*f)(lst->content));
+		if (!ptr)
+		{
+			ft_lstclear(&head, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&head, ptr);
 		lst = lst->next;
 	}
-	return (lst);
+	return (head);
 }

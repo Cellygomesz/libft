@@ -1,4 +1,7 @@
-# 📚 Libft
+# ✨ Libft
+<br>
+
+![image](https://github.com/user-attachments/assets/41cee6d7-7170-443c-940e-a0b944801e09)
 
 É um projeto onde é construída uma biblioteca, com algumas funções de diversas bibliotecas que há em C. Todas elas foram construídas do zero.
 

@@ -1,4 +1,4 @@
-# ✨  Libft
+# ✨ Libft
 <br>
 
 ![image](https://github.com/user-attachments/assets/41cee6d7-7170-443c-940e-a0b944801e09)

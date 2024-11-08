@@ -1,7 +1,11 @@
 # ✨ Libft
 <br>
 
-![image](https://github.com/user-attachments/assets/41cee6d7-7170-443c-940e-a0b944801e09)
+<p align="center">
+  <img src="https://github.com/0bvim/42-project-badges/raw/main/badges/libftm.png">
+</p>
+
+<br>
 
 É um projeto onde é construída uma biblioteca, com algumas funções de diversas bibliotecas que há em C. Todas elas foram construídas do zero.
 
@@ -10,6 +14,8 @@
 **➡️ .h (header):** O arquivo de cabeçalho.
 
 **➡️ Makefile:** é o arquivo usado para compilar os arquivos .c.
+
+<br>
 
 ## ⚙️ Funções da Libft
 <br>

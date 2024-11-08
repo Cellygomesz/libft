@@ -1,4 +1,4 @@
-# ✨ Libft
+# Libft
 <br>
 
 <p align="center">
@@ -7,7 +7,10 @@
 
 <br>
 
-É um projeto onde é construída uma biblioteca, com algumas funções de diversas bibliotecas que há em C. Todas elas foram construídas do zero.
+<p text align="center"> É um projeto onde é construída uma biblioteca, com algumas funções de diversas bibliotecas que há em C. </p>
+  <p text align="center"> Todas elas foram construídas do zero. </p>
+
+  <br>
 
 **➡️ files.c:** Onde todas as funções são escritas.
 
@@ -72,7 +75,5 @@
 - `ft_putendl_fd` gera uma string para um descritor de arquivo, seguida por uma nova linha.
 - `ft_putnbr_fd`gera um número para um descritor de arquivo.
 
-<br><br>
-  <p align="center">
-  <img height="350" width="480" src="https://media2.giphy.com/media/3f5UAomx16OGChwpci/200.gif?cid=790b7611ddco3s5v972a3mzail1o0aln0aockfhm5ukh0500&ep=v1_gifs_search&rid=200.gif&ct=g" alt="Surto">
-</p>
+<br>
+<hr>
